@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Powered | CoderX ©2020 | Andrei Abd
+    █▀▀ █▀█ █▀▄ █▀▀ █▀█ ▀▄▀
+    █▄▄ █▄█ █▄▀ ██▄ █▀▄ █░█
+    CODER X |تم تصميم الموقع و برمجته من قبل اندريه عبد
+    mail      :  usr.g0a1@gmial.com
+    CoderX    :  https://andreiabd.github.io/CoderX/index.html
+    Whatsapp  :  +963934820511
+    Pinterest :  https://www.pinterest.com/andreiabd93
+    Instagram :  https://www.instagram.com/andrei_abd/
+    Linkeden  :  https://www.linkedin.com/in/andreiabd
+    Facebook  :  https://www.facebook.com/andreiaabd/
+    -->
+    <head>
+            <!--Settings-->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+
+            <!--MDBootstrap-->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+            <!-- Font Awesome -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+            <!-- Google Fonts -->
+            <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+            <!-- MDB -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.css" rel="stylesheet"/>
+
+            <!--Font awesome-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <!--CSS Link-->
+            <link rel="stylesheet" href="css/style.css">
+
+            <!--Web Site SEO & Description & Tittle & Icon-->
+            <link rel="icon" href="img/ico.png">
+            <meta name="description" content="Coder Note,Online Coder Editor">
+            <meta name="keywords" content="Coder, Note, Editor, Cod Note, Online, Java script, html, css">
+            <title>Coder Note</title>
+    </head>
+    <body id="body">
+        <div id="dialogoverlay"></div>
+        <div id="dialogbox">
+            <div id="dialogboxfooter"></div>
+            <div id="dialogboxbody"></div>     
+        </div>
+        <header>
+            <!--Loader Page-->
+            <div class="loader">
+                <div>
+                    <img src="gif/loader.gif" width="50px" height="50px" alt="Loading"/>
+                </div>
+            </div>
+            <div id="nave">
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container">
+                        <a class="navbar-brand">
+                            <img
+                                src="img/logo.png"
+                                        height="60"
+                                    alt="logo"
+                                loading="lazy"
+                            />
+                            <img
+                                id="pipe"
+                                src="img/pipe.png"
+                                        height="40"
+                                    alt="logo"
+                                loading="lazy" 
+                            />
+                        </a>    
+                    </div>                    
+                </nav>
+            </div>
+        </header>
+        <div id="helpuserdiv">
+            <span id="span">
+                <strong>
+                    <i class="fas fa-info-circle"></i> <u> Control Butttons:</u>
+                </strong>
+                <br>
+                <i class="fas fa-code"></i><strong> Run Codes:</strong> see code output in resutl screen, run code support  <strong>javascript</strong>,<strong>css</strong>,<strong>html</strong> codes.<br>
+                <i class="fas fa-moon"></i><strong> Dark mode:</strong> changed theme color into dark mode, this effect changed all page into dark mode without result screen.<br> 
+                <i class="fas fa-sun"></i><strong> Light mode:</strong> changed theme color into light mode, this effect changed all page into light mode without result screen,it also set by defulte.<br>
+                <i class="fas fa-eraser"></i><strong> Clean Output:</strong> clean output screen result, and keep codes on screen.<br>
+                <i class="fas fa-save"></i><strong> Save Codes:</strong> save input codes into cache memory,it run by defulte after refresh the page.<br>
+                <i class="fas fa-trash-alt"></i><strong> Delete Cache:</strong> delete all cached memory,it show empty screen by defulte.<br>
+                <i class="fas fa-refresh"></i><strong> Refresh Page:</strong> refresh the page and put saved codes from the cache memory.<br>
+                <br>
+                <strong>
+                    <i class="fas fa-info-circle"></i> <u> Screen Butttons:</u>
+                </strong>
+                <br>
+                <i class="fas fa-book"></i><strong> About & Contact:</strong> all information about the site, Designer,Developer.<br>
+                <i class="fas fa-book"></i><strong> Help:</strong> help list with all information and useage.<br>
+                <i class="fas fa-plus-square"></i><strong> Auto Codes:</strong> set html codes automatically,it also put script,style tags.<br>
+                
+            </span>
+        </div>
+        <main>
+            <div id="controls">
+                <button id="about" class="btn "><i class="fas fa-book"></i> About & Contact</button>
+                <button id="contact" class="btn "><i class="fas fa-book"></i> Help</button>
+            </div>
+            <div id="ALERT"></div>
+            <div id="codeandbtn">
+                <div id="btnsetting">
+                    <ul>
+                        <li>
+                            <button id="run" class="btn"><i class="fas fa-code"></i></button>
+                            <button id="themedark" class="btn"><i class="fas fa-moon"></i></button>
+                            <button id="themesun" class="btn"><i class="fas fa-sun"></i></button>
+                            <button id="clean" class="btn"><i class="fas fa-eraser"></i></button>
+                            <button id="savecodein" class="btn"><i class="fas fa-save"></i></button>
+                            <button id="clear" class="btn "><i class="fas fa-trash-alt"></i></button>
+                            <button id="refresh" class="btn "><i class="fas fa-refresh"></i></button>
+                        </li>
+                    </ul>
+                </div>
+                <textarea id="codes"></textarea>
+                <textarea id="codesautoset">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style></style>
+</head>
+<body>
+    
+    <script></script>
+</body>
+</html>
+                </textarea>
+            </div>
+            <div id="controls">
+                <button id="setauto" class="btn"><i class="fas fa-plus-square"></i><strong> Auto Codes</strong></button>
+            </div>
+            <div id="line"></div>
+            <div id="ALERT2"></div>
+        </main>
+        
+        <div id="result"></div>
+        </div>
+        </div>
+            <footer class="text-center">
+                <a  href="https://andreiabd.github.io/CoderX/index.html" target="blank">© 2021 2022 Copyright: Andrei Abd | CoderX</a>
+            </footer>
+        </div>
+
+        <!--btn back to top-->
+		<button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+        
+        <!--JAVA SCRIPT-->
+        <!-- MDB JS-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.js"></script>
+        <!-- Link JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+
+

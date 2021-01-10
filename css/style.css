@@ -1,0 +1,200 @@
+body {
+    width: 100%;
+}
+#nave{
+    width: auto;
+    height: auto;
+    margin: auto;
+    box-shadow: 2px 2px 20px grey;
+    border-radius: 15px 15px;
+}
+footer {
+    font-weight: bold;
+}
+#pipe {
+    animation-name: scale;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    margin-top: 6px;
+}    
+@keyframes scale {
+0% {
+opacity: 0.5;
+    }
+25% {
+    opacity: 1;
+    }
+50% {
+    opacity: 1.5;
+    }
+75% {
+    opacity: 1;
+    }
+90% {
+    opacity: 0.5;
+    }
+100% {
+    opacity: 0;
+    }
+}
+main {
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    display: block;
+}
+#codeandbtn{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+#btnsetting{
+    float: right;
+    width: 20%;
+    height: 300px;
+    border-radius: 5%;
+}
+#btnsetting button{
+    transform: translateX(-20px);
+    border-radius: 20%;
+    font-size: auto;
+    border: 1px solid black;
+    margin: 5px;
+    color: #000;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 5px black;
+    text-align: center;
+    justify-content: center;
+    display: block;
+}
+#btnsetting ul li{
+    list-style-type: none;
+}
+#codes {
+    float: left;
+    width: 80%;
+    height: 300px;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px black;
+}
+#codesautoset{
+    float: left;
+    width: 80%;
+    height: 300px;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px black;
+    display: none;
+}
+#controls {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    margin-bottom: 10px;
+}
+#controls button {
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: #000;
+    box-shadow: 2px 2px 5px black;
+}
+#result {
+    max-width: 100%;
+    margin: auto;
+    width: 95%;
+    height: 650px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    display: none;
+}
+#Resultimg {
+    padding-left: 30px;
+}
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    font-size: 1.5em;
+    width: 50px;
+    height: 60px;
+    color: #000;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 40%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    box-shadow: 2px 2px 5px black;
+}
+#back-to-top-btn:hover, #back-to-top-btn:focus {
+    color: grey;  
+}
+#dialogoverlay{
+    display: none;
+    opacity: .8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 10;
+}
+#dialogbox{
+    display: none;
+    position: fixed;
+    width: 250px;
+    z-index: 10;
+}
+#dialogboxbody{
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 15px;
+    border: 1px solid black;
+    color: #000;
+    box-shadow: 2px 2px 5px black;
+    background-color: #fff;
+    padding: 15px;
+}
+#dialogboxfooter{
+    text-align: right;
+}
+#helpuserdiv{
+    display: none;
+    color: #000;
+    margin: 35px;
+}
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader > img {
+    width: 100px;
+}
+.loader.hidden {
+    animation: fadeOut 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+    100% {
+    opacity: 0;
+    visibility: hidden;
+}
+}
+#line {
+    width: 100%;
+    border: 1px solid black;
+}
